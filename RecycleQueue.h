@@ -12,6 +12,7 @@ class RecycleQueue
 		RecycleQueue(){}
 		~RecycleQueue(){}
 	private:
+
 		stType **m_queue;
 		volatile uint64_t m_readPos;
 		volatile uint64_t m_writePos;
