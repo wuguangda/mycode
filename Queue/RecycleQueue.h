@@ -9,7 +9,7 @@ template <typename stType>
 class RecycleQueue
 {
 	public:
-		RecycleQueue(){}
+		RecycleQueue():m_readPos(0),m_writePos(0),m_unDropCount(0),m_rqSize(0),m_rqmask(0){}
 		~RecycleQueue(){}
 	private:
 

@@ -1,0 +1,5 @@
+#!/bin/sh
+aclocal
+autoscan
+autoconf
+automake --foreign --add-missing --copy
