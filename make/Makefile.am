@@ -1,7 +1,7 @@
 AUTOMAKE_OPTIONS = foreign
 
 CC=g++
-noindt_PROGRAMS = /bin/DataTest
+noinst_PROGRAMS = bin/DataTest
 
 
 INCLUDE = -I ../hdr\
@@ -11,7 +11,7 @@ INCLUDE = -I ../hdr\
 bin_DataTest_SOURCES = ../src/main.cpp
 
 
-bin_DataTest_LDADD = -L /usr/lib64  -lpthread
+#bin_DataTest_LDADD = -L /usr/lib64  -lpthread
 
 bin_DataTest_CXXFLAGS = -Wall -g -D_LINUX_
 
